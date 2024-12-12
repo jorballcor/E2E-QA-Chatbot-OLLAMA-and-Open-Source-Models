@@ -1,0 +1,13 @@
+[project]
+name = "e2e-qa-chatbot-ollama-and-open-source-models"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain-community>=0.3.11",
+    "langchain-core>=0.3.24",
+    "langchain>=0.3.11",
+    "langserve>=0.3.0",
+    "streamlit>=1.41.0",
+]
