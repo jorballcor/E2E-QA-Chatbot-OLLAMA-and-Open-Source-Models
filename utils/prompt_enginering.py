@@ -3,7 +3,7 @@ from langchain_core.prompts import ChatPromptTemplate
 
 def define_prompt_template():
     prompt=ChatPromptTemplate.from_messages(
-        prompt = ChatPromptTemplate.from_messages([
+       [
         ("system", 
          """You are an expert conversational assistant designed to provide accurate and concise answers. 
          Use the following context to respond to user queries. If the context does not provide enough information, 
@@ -17,6 +17,6 @@ def define_prompt_template():
          """User Question:\n{question}"""),
         ("assistant", 
          """Response:""")
-    ])
+        ]
     )
     return prompt
